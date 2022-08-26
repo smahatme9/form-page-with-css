@@ -1,0 +1,68 @@
+/* typing animation for heading  */
+.wrapper { height: 5vh;
+   display:flex; 
+   align-items:left; 
+   justify-content:left; }
+  
+  #typing-demo {
+   width: 27ch; 
+   animation: typing 2s steps(27),
+  blink .5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 3px solid;
+   font-family: monospace; font-size: 2em;
+  }
+   @keyframes typing { 
+   from {
+   width: 0
+  }
+  }
+   @keyframes blink {
+   50% {\ border-color: transparent
+  }
+}
+/* styling label */
+   label{color:rgb(231, 105, 42); font-size:x-large;}
+   input{size:larger;}
+/* background image added */
+body {background-image: url(form\ back.jpg); background-attachment: fixed;
+     background-repeat: no-repeat; background-size: 99.99%;}
+  /* center to all text content  */
+.form {text-align: center; font: size 30px;}
+/* styling input box rounded corner  */
+.border{
+   border-radius: 20px;
+   border: 1px solid #2d9fd9;
+   color: #a0d18c;
+   width: 250px;
+   height: 30px;
+   padding-left: 10px;}
+.border:focus {
+    outline: none;
+    border: 1px solid #a0d18c;
+    color: #0b7cb4;
+     }
+/* styling to submit & reset button and gives hover effect  */
+   .btn {
+   position: relative;
+    color: rgb(84, 139, 230); 
+    border: none;
+    font-size: 2rem;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;}
+   .btn::after {
+   content:"";
+   position: absolute;
+    left: 0; 
+    height: 100%; 
+    width: 30%;
+    background: deepskyblue;
+    border-radius: 10px;
+    z-index: -1; 
+    transition: 0.3s ease;
+    }
+    .btn:hover::after {
+    width: 100%;
+    }

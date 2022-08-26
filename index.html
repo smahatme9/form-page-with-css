@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customer support survay</title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+ <style>
+  /* internal css use for styling  */
+    h1{ text-align: left; margin-left: 1cm;}
+    .left{width:50%; float: left; margin-left: 15%;}
+    .right{width: 50%;}
+    p{text-align: center;}
+
+ </style>
+  <body>
+    <!-- heading -->
+    <div  class="wrapper" id="typing-demo">
+      support satisfaction survey
+      </div> <br>
+      <div class="form">
+      <form action="/action.html" method="post" target="_blank">
+      <!-- lable for entering name  -->
+      <label class="input" for="Your Name"> Your Name</label>
+      <input class="border" type="text" placeholder="Enter Your Name" required name="Your Name"> <br /><br /><br>
+      <!-- lable for enteringEmail -->
+      <label for="Your Email">Your Email</label>
+      <input class="border" type="email" placeholder="Enter Your Email" required name="Your Email"><br><br><br>
+      <!-- it is for responce date collection -->
+      <label for="date">date</label>
+      <input class="border" type="datetime-local" name="date" required><br /><br /> <br><br>
+      <!-- lable for knowing customer relation -->
+      <label
+        >How long have you been <br />
+        using this product?</label>  <br /><br />
+      <!-- input type radio use for selection of any one option  -->
+      <ul type="none"><li><input type="radio" value="Less than thirty days" required name="how_long" />Less
+      than thirty days</li> <br />
+      <li><input type="radio"value="from thirty to ninety days" required name="how_long">
+     From thirty to ninety days</li> <br />
+      <li><input type="radio" value="From three to six month" required name="how_long" />From
+      three to six months</li><br />
+      <li><input type="radio"value="From six to twelve months" required name="how_long"/>
+      From six to twelve months </li><br />
+      <li><input type="radio" value="More than one year" required name="how_long" />More than
+      one years</li><br /></ul><br /><br>
+      <!-- lable for knowing medium to coneect with us -->
+    <label>How did you contact<br/>
+        technical support?</label><br />
+      <!-- here select attribute is use for dropdown menu  -->
+      <select name="technical support" id="technial support" required>
+        <option value="via telephone">via telephone</option>
+        <option value="via Email">via Email</option>
+        <option value="via fourms">via fourms</option>
+        <option value="via chat">via chat</option>
+        <option value="other">other</option>
+      </select> <br /><br /> <br><br><br>
+     <!-- blank space for if any other medium to contact with us  -->
+      <label for="other">If other please specify:</label>
+      <input class="border" type="text" required name="other" /> <br /><br /><br><br><br>
+     <!-- lable for follow up information-- -->
+      <label for="follow-up">
+        Did anyone follow up with <br />
+        you to see whether your <br />
+        problem was resolved?</label>
+     <!-- radio type input method is use for selecting any one option  -->
+      <input type="radio" required value="Yes" name="follow-up" />Yes
+      <input type="radio" required value="NO" name="follow-up" />No <br /><br /><br><br><br>
+      <!-- lable for custmer comment -->
+      <label for="comments"
+        >Please write any comments (positive or negative)</label><br /><br />
+      <!-- textarea attribute use for comments -->
+      <textarea class="border" cols="40" rows="3" name="comments" required></textarea></div> <br><br> <br>
+     <!-- clickable aleart button use for submitting form  -->
+     <p><button class="btn" type="submit" value="submit" > submit </button> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+      <button class="btn"  type="reset" value="reset"> Reset </button></p>
+     </form>
+  </body>
+</html>
